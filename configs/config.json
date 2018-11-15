@@ -1,0 +1,36 @@
+{
+  "model_module_name": "inception_v4",
+  "model_net_name": "inception_v4",
+  "gpu_id": "1",
+  "official_source": false,
+  "async_loading": true,
+  "is_tensorboard": false,
+  "evaluate_before_train": true,
+  "shuffle": true,
+  "data_aug": false,
+
+  "num_epochs": 50,
+  "img_height": 299,
+  "img_width": 299,
+  "num_channels": 3,
+  "num_classes": 102,
+  "batch_size": 16,
+  "workers": 2,
+  "learning_rate": 1e-4,
+  "learning_rate_decay": 0.9,
+  "learning_rate_decay_epoch": 1,
+
+  "train_mode": "fromscratch",
+  "file_label_separator": "----",
+  "pretrained_path": "/hdd/datasets/pretrained_model",
+  "pretrained_file": "inception_v3_weights_tf_dim_ordering_tf_kernels.h5",
+  "save_path": "/hdd/datasets/flower_102/save_model",
+  "save_name": "model.h5",
+
+  "train_data_root_dir": "/hdd/datasets/flower_102",
+  "val_data_root_dir": "/hdd/datasets/flower_102",
+  "train_data_file": "/hdd/datasets/flower_102/trainset.txt",
+  "val_data_file": "/hdd/datasets/flower_102/testset.txt"
+
+
+}
